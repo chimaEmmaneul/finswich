@@ -44,7 +44,7 @@ export default function TransactionRecordsTable({ records, loading, isError }: T
           <thead>
             <tr>
               {["Amount", "Exchange rate", "Reference", "Sender's Email", "Timestamp", "Balance", "Fee"].map((header) => (
-                <th key={header} className="text-left px-4 py-2 text-sm font-bold text-[#5B5B5B]">{header}</th>
+                <th key={header} className="text-left px-4 py-2 text-sm font-bold text-[#5B5B5B] whitespace-nowrap">{header}</th>
               ))}
             </tr>
           </thead>
@@ -77,7 +77,7 @@ export default function TransactionRecordsTable({ records, loading, isError }: T
                 <td className="px-4 py-4 text-sm text-[#797D8C] font-[500] border-t border-b border-[#EBE8FF]">
                   <span className="truncate max-w-[150px] block">{record.senderEmail}</span>
                 </td>
-                <td className="px-4 py-4 text-sm text-[#797D8C] font-[500] border-t border-b border-[#EBE8FF]">
+                <td className="px-4 py-4 text-sm text-[#797D8C] font-[500] border-t border-b border-[#EBE8FF] whitespace-nowrap">
                   {formatDate(record.timestamp)}
                 </td>
                 <td className="px-4 py-4 text-sm text-[#797D8C] font-[500] border-t border-b border-[#EBE8FF]">

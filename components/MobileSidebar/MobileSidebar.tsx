@@ -27,7 +27,7 @@ const MobileSidebar = ({ isopen, setIsOpen }: MobileSidebarProps) => {
   return (
     <Sheet open={isopen} onOpenChange={setIsOpen}>
       <SheetContent side={"left"} className="!max-w-full w-[90%]">
-        <div className="flex flex-col h-[calc(100vh-20px)] px-4  mb-6 ">
+        <div className="flex flex-col h-[calc(100vh-80px)] px-4  mb-6 ">
           <div className=" mb-4 mt-3 ">
             <div className="flex items-center gap-2 px-4 py-2 rounded-[12px] border ">
               <Image src="/img/Qproject.png" alt="Qproject" width={28} height={28} />
