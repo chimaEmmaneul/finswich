@@ -5,6 +5,8 @@ import React from 'react'
 
 const Branding = () => {
   return (
+
+    <section>
     <main className='grid grid-cols-1 gap-4 lg:grid-cols-5 w-full mt-10'>
 
       <div className='col-span-3'>
@@ -53,7 +55,14 @@ const Branding = () => {
       <div className='col-span-2'>
         <FinancialDashboard />
       </div>
+
     </main>
+      <div className='flex justify-center  sm:justify-end  w-full mt-24'>
+        <button className='text-white bg-[#0A59F3] py-3.5 px-12 rounded-md'>
+          Submit
+        </button>
+      </div>
+    </section>
   )
 }
 

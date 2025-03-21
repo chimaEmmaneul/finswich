@@ -13,7 +13,7 @@ const Navbar = () => {
   }
 
   return (
-    <nav className="sticky w-full top-0 left-0 right-0 flex items-center z-50  px-4 h-16  sm:px-20  text-white" style={{
+    <nav className="sticky w-full top-0 left-0 right-0 flex items-center z-30  px-4 h-16  sm:px-20  text-white" style={{
       backgroundImage: `url("/img/navbcg.png")`,
       backgroundSize: "cover",
     }}>

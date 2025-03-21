@@ -27,6 +27,14 @@ export default function TransactionRecordsTable({ records, loading, isError }: T
     )
   }
 
+  if (isError) {
+    return (
+      <div>
+        <h1>Error while fetching</h1>
+      </div>
+    )
+  }
+
   return (
     <div className="w-full">
       <h2 className="text-xl font-bold text-gray-900 mb-6">Records</h2>
@@ -44,7 +52,7 @@ export default function TransactionRecordsTable({ records, loading, isError }: T
             {records.map((record) => (
               <tr key={record.id} className="bg-white">
                 <td
-                  className={`px-4 py-4 text-sm border border-[#EBE8FF] rounded-l-2xl ${record.amount >= 0 ? "text-blue-600 font-medium" : "text-red-600 font-medium"}`}
+                  className={`px-4 py-4 text-sm border-l border-t border-b border-[#EBE8FF] rounded-l-2xl ${record.amount >= 0 ? "text-blue-600 font-medium" : "text-red-600 font-medium"}`}
                 >
                   {record.amount >= 0 ? "+" : "-"}${Math.abs(record.amount).toFixed(2)}
                 </td>
