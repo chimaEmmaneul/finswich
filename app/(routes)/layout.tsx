@@ -6,7 +6,7 @@ export default function RoutesLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <div className="mx-4 my-8 min-h-screen">
+    <div className=" mx-1 min-[375px]:mx-4 my-8 min-h-screen">
       <TabNavigation />
       {children}
     </div>

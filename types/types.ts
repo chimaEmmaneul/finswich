@@ -26,4 +26,21 @@ export type ChartDataItem = {
   income: number;
   expense: number;
 };
+
+export type TransactionRecords = {
+  id: string;
+  amount: number;
+  exchangeRate: string;
+  reference: string;
+  senderEmail: string;
+  timestamp: Date;
+  balance: number;
+  fee: number;
+};
+
+export type BalanceRecords = {
+  id: string;
+  balance: number;
+  earnings: number;
+};
 export type TabType = "payment" | "store" | "wallet" | "more";

@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "../components/Navbar";
 import SidebarNavigation from "../components/Sidebar";
 import QueryProvider from "@/Provider/QueryProvider";
+import NextProgressBar from "@/Provider/NextProgressBar";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -31,15 +32,17 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <QueryProvider>
-          <Navbar />
-          <div className="flex w-full">
-            <SidebarNavigation />
-            <div className="flex-1 overflow-x-auto">
-              {children}
+        <NextProgressBar>
+          <QueryProvider>
+            <Navbar />
+            <div className="flex w-full">
+              <SidebarNavigation />
+              <div className="flex-1 overflow-x-auto">
+                {children}
+              </div>
             </div>
-          </div>
-        </QueryProvider>
+          </QueryProvider>
+        </NextProgressBar>
       </body>
     </html>
   );
