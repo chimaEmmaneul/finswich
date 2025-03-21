@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { TabType } from '@/types/types'
 
-import { CoppyIcon, MoreIcon, PaymentIcon, RecordIcon, StoreIcon, WalletBalanceIcon, WalletBlueIcon } from "@/icon/icon"
+import { MoreIcon, PaymentIcon, StoreIcon, WalletBlueIcon } from "@/icon/icon"
 
 
 const BottomTabNavigator = () => {
