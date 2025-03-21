@@ -57,8 +57,8 @@ const Branding = () => {
       </div>
 
     </main>
-      <div className='flex justify-center  sm:justify-end  w-full mt-24'>
-        <button className='text-white bg-[#0A59F3] py-3.5 px-12 rounded-md'>
+      <div className='flex justify-center  sm:justify-end  w-full mt-24 '>
+        <button className='text-white bg-[#0A59F3] py-3.5 px-12 rounded-md sm:mr-10'>
           Submit
         </button>
       </div>
