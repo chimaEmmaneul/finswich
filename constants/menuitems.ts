@@ -55,10 +55,10 @@ export const MENU_ITEMS = [
     id: "plugin-service",
     label: "Plugin Service",
     icon: PlugInServicesIcon,
-    path: "/plugin-service",
+    path: "plugin-service",
     subItems: [
-      { id: "service", label: "Service", path: "/pluging-service/service" },
-      { id: "branding", label: "Branding", path: "/pluging-service/branding" },
+      { id: "service", label: "Service", path: "/plugin-service/service" },
+      { id: "branding", label: "Branding", path: "/plugin-service/branding" },
     ],
   },
   { id: "users", label: "Users", icon: UsersIcon, path: "/users" },

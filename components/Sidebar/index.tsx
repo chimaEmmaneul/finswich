@@ -37,6 +37,7 @@ export default function SidebarNavigation() {
           <ul className="space-y-1 px-2">
             {MENU_ITEMS.map((item) => {
               const activeItem = pathname.split("/").includes(item.path ? item.path : "")
+              console.log(item.path)
               return (
                 <li key={item.id}>
                   {item.subItems ?
