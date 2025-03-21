@@ -7,7 +7,7 @@ const Branding = () => {
   return (
 
     <section>
-    <main className='grid grid-cols-1 gap-4 lg:grid-cols-5 w-full mt-10'>
+      <main className='grid grid-cols-1 gap-y-4 lg:gap-x-4 lg:grid-cols-5 w-full mt-10'>
 
       <div className='col-span-3'>
         <div className=' relative w-full lg:w-[90%] h-[220px] mb-8'>
@@ -57,7 +57,7 @@ const Branding = () => {
       </div>
 
     </main>
-      <div className='flex justify-center  sm:justify-end  w-full mt-24 '>
+      <div className='flex justify-center  sm:justify-end  w-full mt-6 sm:t-24 '>
         <button className='text-white bg-[#0A59F3] py-3.5 px-12 rounded-md sm:mr-10'>
           Submit
         </button>
