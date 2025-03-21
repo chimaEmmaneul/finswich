@@ -58,7 +58,7 @@ const skeletonChartData: ChartDataItem[] = [
   { month: "JUN", income: 20000, expense: 18000 },
   { month: "JUL", income: 18000, expense: 12000 },
 ]
-
+//for creating skeleton loader
 
 export default function FinancialDashboard(): JSX.Element {
 
